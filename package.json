@@ -1,0 +1,32 @@
+{
+  "name": "shake-direction",
+  "version": "0.0.0",
+  "description": "A custom &#39;shake&#39; event with direction JavaScript plugin for mobile web browsers using device accelerometer.",
+  "license": "MIT",
+  "repository": "elzup/shake-direction",
+  "author": {
+    "name": "elzup",
+    "email": "guild0105@gmail.com",
+    "url": "elzup.com"
+  },
+  "engines": {
+    "node": ">=4"
+  },
+  "scripts": {
+    "test": "xo && ava"
+  },
+  "files": [
+    "index.js"
+  ],
+  "keywords": [
+    ""
+  ],
+  "dependencies": {},
+  "devDependencies": {
+    "ava": "^0.15.2",
+    "xo": "^0.16.0"
+  },
+  "xo": {
+    "esnext": true
+  }
+}
