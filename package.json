@@ -1,6 +1,6 @@
 {
   "name": "shake-direction",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A custom &#39;shake&#39; event with direction JavaScript plugin for mobile web browsers using device accelerometer.",
   "license": "MIT",
   "repository": "elzup/shake-direction",
