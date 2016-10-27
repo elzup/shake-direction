@@ -13,32 +13,57 @@ $ npm install --save shake-direction
 ## Usage
 
 ```js
-const shakeDirection = require('shake-direction');
+'use strict';
 
-shakeDirection('unicorns');
-//=> 'unicorns & rainbows'
+
+import ShakeDirection from './';
+
+var se = new ShakeDirection({
+	threshold: 20,
+	timeout: 1000
+});
+se.start();
+
+window.addEventListener('shake-x-positive', () => {
+	console.log('X Positive!');
+}, false);
+window.addEventListener('shake-x-negative', () => {
+	console.log('X Negative!');
+}, false);
+window.addEventListener('shake-y-positive', () => {
+	console.log('Y Positive!');
+}, false);
+window.addEventListener('shake-y-negative', () => {
+	console.log('Y Negative!');
+}, false);
+window.addEventListener('shake-z-positive', () => {
+	console.log('Z Positive!');
+}, false);
+window.addEventListener('shake-z-negative', () => {
+	console.log('Z Negative!');
+}, false);
 ```
 
 
 ## API
 
-### shakeDirection(input, [options])
+### ShakeDirection(threshold, timeout)
 
-#### input
+#### threshold
 
-Type: `string`
+Type: `int`<br>
+Default: 15
 
-Lorem ipsum.
+optional shake strength threshold.
 
 #### options
 
-##### foo
+##### timeout
 
-Type: `boolean`<br>
-Default: `false`
+Type: `int`<br>
+Default: 1000
 
-Lorem ipsum.
-
+determines the frequency of event generation.
 
 ## License
 
